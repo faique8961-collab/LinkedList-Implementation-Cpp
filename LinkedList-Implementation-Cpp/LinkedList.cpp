@@ -95,7 +95,7 @@ Node* addAtEnd(Node* end, int value)
 	end->next = newNode;
 	
 	cout << "Task Executed!"<< endl;
-	return head;
+	return newNode;
 }
 
 // Task 2 C --- add at specific point
@@ -118,7 +118,7 @@ Node* addAtChc( Node* temp, int mid, int value)
 		temp= temp->next;
 	}
 	cout << " Value "<< mid << " not found. Hence no node is added." << endl;
-	return head;
+	return nullptr;
 }
 
 
@@ -387,4 +387,5 @@ int main()
 	} while (choice != 0);
 	deleteList(head);
 	return 0;
+
 }
